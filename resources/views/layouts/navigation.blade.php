@@ -1,24 +1,35 @@
 <nav x-data="{ open: false }" class="bg-transparent fixed w-full">
     <!-- Primary Navigation Menu -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white/50 rounded-[2rem] mt-7">
-        <div class="flex justify-between h-16">
-            <div class="flex">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white/30 rounded-[3rem] mt-7">
+        <div class="flex justify-between h-20">
+            <div class="flex w-full justify-between ">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
-                    </a>
+                    <img class="object-contain w-3/4" src={{ asset('storage/logo.svg') }} alt="">
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                    <x-nav-link link="#home" mode="transparent">
+                        Home
+                    </x-nav-link>
+
+                    <x-nav-link link="#tentang-program" mode="transparent">
+                        Tentang Program
+                    </x-nav-link>
+
+                    <x-nav-link link="#berita" mode="transparent">
+                        Berita
+                    </x-nav-link>
+
+                    <x-nav-link link="#" mode="yellow">
+                        Registrasi
                     </x-nav-link>
                 </div>
+
             </div>
 
-            <!-- Settings Dropdown -->
+            {{-- <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">
                  
@@ -46,7 +57,7 @@
                         </x-slot>
                 
                 </x-dropdown>
-            </div>
+            </div> --}}
 
             <!-- Hamburger -->
             <div class="-me-2 flex items-center sm:hidden">
