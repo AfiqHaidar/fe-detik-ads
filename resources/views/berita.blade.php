@@ -1,13 +1,13 @@
 <div id="berita" style="background-image: url('{{ asset('storage/berita-cover.svg') }}');" class="w-screen h-fit bg-cover bg-center flex flex-col justify-center items-center">
-    <div class="w-screem h-36 "></div>
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 w-full flex flex-col justify-center items-start gap-10">
-        <div class="w-full overflow-hidden shadow-sm sm:rounded-lg flex justify-start items-start">
-            <img class="" src={{ asset('storage/berita-header.svg') }} alt="">
+    <div class="w-screen  sm:h-36 h-20 "></div>
+    <div class="max-w-7xl sm:mx-auto mx-5 sm:px-6 lg:px-8 w-full flex flex-col justify-center items-start gap-10">
+        <div class="w-full overflow-hidden  sm:mx-auto mx-5 shadow-sm sm:rounded-lg flex justify-start items-start">
+            <img class="sm:w-full w-3/4" src={{ asset('storage/berita-header.svg') }} alt="">
         </div>
 
-        <div class="w-full h-[38rem] flex justify-center items-start">
+        <div class="w-full xl:h-[38rem] lg:h-[30rem] md:h-[22rem] h-fit flex sm:flex-row flex-col justify-center items-start sm:gap-0 gap-4 sm:px-0 px-5">
 
-            <div class="w-1/2 h-full flex flex-col justify-center items-start mr-2 group">
+            <div class="sm:w-1/2 w-full h-full flex flex-col justify-center items-start mr-2 group ">
                 <x-berita-headnews>
                         <x-slot:image>berita-img1.svg</x-slot:image>
                         <x-slot:headline>Warga Thailand Pakai Boneka Doraemon untuk Ritual Pemanggilan Hujan</x-slot:headline>
@@ -15,7 +15,7 @@
                 </x-berita-headnews>
            </div>
 
-            <div class="w-1/2 h-full flex flex-col justify-between items-center ml-2 rounded-3x  ">
+            <div class="sm:w-1/2 w-full h-full flex flex-col justify-between items-center ml-2 rounded-3x sm:gap-0 gap-4 ">
                 <x-berita-sidenews>
                     <x-slot:image>berita-img1.svg</x-slot:image>
                     <x-slot:headline>Thailand Ngarep Cuan Banyak dari Turis China dan Jepang</x-slot:headline>
@@ -36,5 +36,5 @@
         </div>
 
     </div>
-    <div class="w-screem h-36 "></div>
+    <div class="w-screen  sm:h-36 h-20 "></div>
 </div>
