@@ -1,9 +1,6 @@
-# Web Application
+# Important!
 
 This web application is built using **Laravel 11**, so please ensure your environment meets the following requirements:
-
-## Requirements
-
 -   **PHP**: Version **8.2** or higher
 -   **Apache**: Must be using a version compatible with PHP 8.2 and Laravel 11
 
